@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="./calculator.js" defer></script>
+  </head>
+  <body>
+    <fieldset
+      class="container d-flex justify-content-center align-items-center border border-top-0 mt-md-5 p-md-4"
+    >
+      <legend class="ml-md-5">FARE CALCULATOR</legend>
+      <div class="container w-100">
+        <div class="form-group">
+          <label for="number1"> Distance</label>
+          <input
+            type="number"
+            name="number1"
+            class="form-control num1"
+            placeholder="Enter Distance Number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="number2">People</label>
+          <input
+            type="number"
+            name="number2"
+            class="form-control num2"
+            placeholder="Enter Number Of People"
+          />
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-danger w-100 evaluate">Evaluate</button>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="container py-md-2 d-md-flex justify-content-md-start align-items-md-start border mt-md-4 result"
+    >
+      <h5></h5>
+    </div>
+  </body>
+</html>
