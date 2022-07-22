@@ -30,7 +30,7 @@ function solve() {
   const resultDisplay = document.querySelector(".result h5");
 
   if (!isNaN(amountToPay)) {
-    resultDisplay.innerText = `Total Fare: Ksh. ${amountToPay}`;
+    resultDisplay.innerText = `Total Fare: Ksh. ${amountToPay.toLocaleString()}`;
   } else {
     resultDisplay.innerText = amountToPay;
   }
@@ -40,7 +40,8 @@ function getFare() {
   const distance = parseInt(document.querySelector(".num1").value);
   const people = parseInt(document.querySelector(".num2").value);
 
-  if (distance > 400) return "Bus does not travel beyond this point.";
+  if (!distance || !people) return "Please provide all the values.";
+  if (distance > 400) return "The bus does not travel beyond 400 Kilometers.";
 
   const uptoTen = distance > 0 && distance <= 10;
   const uptoFifty = distance > 10 && distance <= 50;

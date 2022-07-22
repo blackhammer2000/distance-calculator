@@ -10,18 +10,51 @@
     <script src="./calculator.js" defer></script>
   </head>
   <body>
+    <div class="container text-center mt-md-3 p-0">
+      <h3>Fare Chart</h3>
+      <table class="table table-active table-responsive-md text-center">
+        <tr>
+          <th>Distance(KM)</th>
+          <th>Price Per Head(KSH)</th>
+        </tr>
+        <tr>
+          <td>1-10</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>11-50</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>51-100</td>
+          <td>5,00</td>
+        </tr>
+        <tr>
+          <td>101-200</td>
+          <td>1,000</td>
+        </tr>
+        <tr>
+          <td>201-300</td>
+          <td>1,200</td>
+        </tr>
+        <tr>
+          <td>301-400</td>
+          <td>1,500</td>
+        </tr>
+      </table>
+    </div>
     <fieldset
-      class="container d-flex justify-content-center align-items-center border border-top-0 mt-md-5 p-md-4"
+      class="container d-flex justify-content-center align-items-center border border-top-0 mt-md-2 p-md-4"
     >
       <legend class="ml-md-5">FARE CALCULATOR</legend>
-      <div class="container w-100">
+      <div class="container">
         <div class="form-group">
-          <label for="number1"> Distance</label>
+          <label for="number1"> Distance(KM)</label>
           <input
             type="number"
             name="number1"
             class="form-control num1"
-            placeholder="Enter Distance Number"
+            placeholder="Enter The Distance To Travel"
           />
         </div>
         <div class="form-group">
@@ -30,19 +63,19 @@
             type="number"
             name="number2"
             class="form-control num2"
-            placeholder="Enter Number Of People"
+            placeholder="Enter Number Of People Travelling"
           />
         </div>
 
         <div class="form-group">
           <button class="btn btn-danger w-100 evaluate">Evaluate</button>
         </div>
+        <div
+          class="container py-md-2 d-md-flex justify-content-md-start align-items-md-start border mt-md-4 result"
+        >
+          <h5></h5>
+        </div>
       </div>
     </fieldset>
-    <div
-      class="container py-md-2 d-md-flex justify-content-md-start align-items-md-start border mt-md-4 result"
-    >
-      <h5></h5>
-    </div>
   </body>
 </html>
